@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffbf2;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://img.collegepravesh.com/2017/02/PESIT-BCS.jpg'); /* Add your background image URL here */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Ensure the body covers the full height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home {
+  display: flex;
+  width: 100%;
+  max-width: 1500px; /* Increase the max-width */
+  height: 90%;
+  border: 5px solid #ff6347; /* Add a full border around the main content */
+  border-radius: 15px;
+  background-color: rgba(255, 255, 240, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #ffe4e1;
+  padding: 20px;
+  border-right: 3px dashed #ff6347;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.sidebar button.active,
+.sidebar button:hover {
+  background-color: #ff4500;
+  transform: scale(1.05);
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 240, 0.9);
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px; /* Make the search bar larger */
+}
+
+.search-bar input {
+  width: 80%;
+  padding: 15px; /* Increase padding for a larger input */
+  border-radius: 10px 0 0 10px;
+  border: 2px solid #ff6347;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+.search-bar button {
+  padding: 15px; /* Increase padding for a larger button */
+  background-color: #ff6347;
+  border: 2px solid #ff6347;
+  border-left: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.3s;
+  box-sizing: border-box;
+}
+
+.search-bar button:hover {
+  background-color: #ff4500;
+  transform: scale(1.05);
+}
+
+.search-bar i {
+  margin-right: 5px;
+}
+
+.logo-placeholder {
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: bold;
+  color: #ff6347;
+  text-shadow: 2px 2px #ffd700;
+  border: 3px dashed #ff6347;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fffacd;
+  background-image: url('https://i.pinimg.com/originals/82/be/d4/82bed479344270067e3d2171379949b3.png'); /* Add your small background image URL here */
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.special {
+  margin-top: 20px;
+  border: 3px dashed #ff6347;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fffacd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.special h2 {
+  color: #ff4500;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.special-items p {
+  font-size: 24px;
+  margin: 10px 0;
+}

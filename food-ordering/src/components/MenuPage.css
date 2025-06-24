@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffbf2;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://img.collegepravesh.com/2017/02/PESIT-BCS.jpg'); /* Add your background image URL here */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Ensure the body covers the full height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent body scroll */
+}
+
+.home {
+  display: flex;
+  width: 100%;
+  max-width: 1500px;
+  height: 90%;
+  border: 5px solid #ff6347;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 240, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #ffe4e1;
+  padding: 20px;
+  border-right: 3px dashed #ff6347;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.sidebar button.active,
+.sidebar button:hover {
+  background-color: #ff4500;
+  transform: scale(1.05);
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  overflow-y: auto;
+  background-color: rgba(255, 255, 240, 0.9);
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.search-bar input {
+  width: 80%;
+  padding: 15px;
+  border-radius: 10px 0 0 10px;
+  border: 2px solid #ff6347;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+.search-bar button {
+  padding: 15px;
+  background-color: #ff6347;
+  border: 2px solid #ff6347;
+  border-left: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.3s;
+  box-sizing: border-box;
+}
+
+.search-bar button:hover {
+  background-color: #ff4500;
+  transform: scale(1.05);
+}
+
+.search-bar i {
+  margin-right: 5px;
+}
+
+.menu-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Add gap between items */
+  justify-content: center;
+}
+
+.menu-category {
+  background-color: #fffacd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 45%; /* Adjust width to allow for side-by-side layout */
+  box-sizing: border-box;
+  border: 2px solid #ff6347; /* Add border to category */
+}
+
+.menu-category h2 {
+  font-size: 28px;
+  color: #ff6347;
+  border: 2px solid #ff6347; /* Add border to category headings */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  max-height: 200px; /* Limit the height of items within the category */
+  overflow-y: auto; /* Make the items scrollable */
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  border: 2px dashed #ff6347; /* Add dashed border to food items */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.add-button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-button:hover {
+  background-color: #ff4500;
+  transform: scale(1.1);
+}
+
+.menu-item p {
+  font-size: 18px;
+  color: #333;
+}
